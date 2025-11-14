@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #ffcc00;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+form {
+    flex: 1;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form h2 {
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: #fff;
+}
+
+textarea {
+    height: 70px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #ffcc00;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e6b800;
+}
+
+.resume {
+    flex: 1;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.resume-header {
+    text-align: center;
+}
+
+.resume h3 {
+    margin-top: 15px;
+    color: #222;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

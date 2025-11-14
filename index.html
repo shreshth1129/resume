@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME-BUILDER</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+
+    <div class="container">
+
+        <form id="resumeForm">
+            <h2>Enter Your Details</h2>
+
+            <label>Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Phone:</label>
+            <input type="text" id="phone" required>
+
+            <label>Current Work / Job Role:</label>
+            <input type="text" id="work">
+
+            <label>Hobbies:</label>
+            <textarea id="hobbies"></textarea>
+
+            <label>Achievements:</label>
+            <textarea id="achievements"></textarea>
+
+            <label>Courses:</label>
+            <textarea id="courses"></textarea>
+
+            <label>Skills:</label>
+            <textarea id="skills"></textarea>
+
+            <label>About You / Summary:</label>
+            <textarea id="summary"></textarea>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <div id="resumeOutput" class="resume hidden">
+            <div class="resume-header">
+                <h2 id="outputName"></h2>
+                <p id="outputEmail"></p>
+                <p id="outputPhone"></p>
+            </div>
+
+            <hr>
+
+            <h3>Profile Summary</h3>
+            <p id="outputSummary"></p>
+
+            <h3>Current Work</h3>
+            <p id="outputWork"></p>
+
+            <h3>Skills</h3>
+            <p id="outputSkills"></p>
+
+            <h3>Courses</h3>
+            <p id="outputCourses"></p>
+
+            <h3>Achievements</h3>
+            <p id="outputAchievements"></p>
+
+            <h3>Hobbies</h3>
+            <p id="outputHobbies"></p>
+
+            <button onclick="printResume()">Download / Print Resume</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
